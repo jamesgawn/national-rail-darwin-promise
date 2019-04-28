@@ -1,0 +1,28 @@
+{
+  "name": "national-rail-darwin-promise",
+  "description": "A promise based implementation to access the national rail's darwin soap based APIs.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && nyc mocha"
+  },
+  "license": "MIT",
+  "keywords": [
+    "national-rail",
+    "darwin",
+    "trains",
+    "rail"
+  ],
+  "author": "James Gawn",
+  "homepage": "https://github.com/jamesgawn/national-rail-darwin-promise",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesgawn/national-rail-darwin-promise.git"
+  },
+  "bugs": "https://github.com/jamesgawn/national-rail-darwin-promise/issues",
+  "devDependencies": {
+    "mocha": "^6.1.4",
+    "nyc": "^14.0.0",
+    "standard": "^12.0.1"
+  }
+}
