@@ -13,6 +13,9 @@
     "trains",
     "rail"
   ],
+  "engines": {
+    "node": ">= 10.15.3"
+  },
   "author": "James Gawn <james@gawn.uk> (https://gawn.uk)",
   "homepage": "https://github.com/jamesgawn/national-rail-darwin-promise",
   "repository": {
