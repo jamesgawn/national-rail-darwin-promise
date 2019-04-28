@@ -5,7 +5,7 @@
 
 ## Introduction
 
-A promise based implementation to access the national rail's darwin soap based APIs that wraps the national-rail-darwin library to expose a native promise interface.
+A promise based implementation to access the national rail's darwin soap based APIs that wraps the [national-rail-darwin library](https://github.com/mattsalt/national-rail-darwin) to expose a native promise interface.
 
 ### Installation
 
