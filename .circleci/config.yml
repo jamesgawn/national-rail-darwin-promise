@@ -23,4 +23,28 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: yarn test
+      # Run mocha
+      - run:
+          name: Tests
+          command: ./node_modules/.bin/nyc ./node_modules/.bin/mocha --recursive --timeout=10000 --exit --reporter mocha-junit-reporter --reporter-options mochaFile=reports/mocha/test-results.xml
+          when: always
+
+      # Run standard
+      - run:
+          name: Code Formatting Check
+          command: standard
+          when: always
+
+      - run:
+          name: Code Test Coveration
+          command: |
+            mkdir coverage
+            ./node_modules/.bin/nyc report --reporter=text-lcov > coverage/lcov.info
+          when: always
+
+      - store_test_results:
+          path: ./reports/mocha/test-results.xml
+
+      - store_artifacts:
+          path: ./coverage/lcov.info
+          prefix: tests

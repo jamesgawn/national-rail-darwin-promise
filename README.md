@@ -10,7 +10,7 @@ A promise based implementation to access the national rail's darwin soap based A
 ### Installation
 
 ```
-npm install national-rail-darwin
+npm install national-rail-darwin-promise
 ```
 
 ### Usage
