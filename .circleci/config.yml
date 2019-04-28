@@ -26,13 +26,13 @@ jobs:
       # Run mocha
       - run:
           name: Tests
-          command: ./node_modules/.bin/nyc ./node_modules/.bin/mocha --recursive --timeout=10000 --exit --reporter mocha-junit-reporter --reporter-options mochaFile=reports/mocha/test-results.xml
+          command: yarn test
           when: always
 
       # Run standard
       - run:
           name: Code Formatting Check
-          command: standard
+          command: yarn lint
           when: always
 
       - run:
