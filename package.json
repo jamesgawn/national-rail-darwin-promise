@@ -1,6 +1,6 @@
 {
   "name": "national-rail-darwin-promise",
-  "description": "A promise based implementation to access the national rail's darwin soap based APIs.",
+  "description": "A promise based wrapper for the national-rail-darwin library to access national rails SOAP API.",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
