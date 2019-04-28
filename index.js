@@ -1,7 +1,7 @@
 class Rail {
   constructor (apiKey, options) {
     this.apiKey = apiKey || process.env.DARWIN_TOKEN
-    this.options = options;
+    this.options = options
   }
 }
 
