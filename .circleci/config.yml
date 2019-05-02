@@ -15,7 +15,9 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: yarn install
+      - run:
+          name: Install Depedancies
+          command: yarn install
 
       - save_cache:
           paths:
@@ -62,9 +64,10 @@ jobs:
       - image: circleci/node:10.15.3
 
     working_directory: ~/repo
+
+    steps:
       - checkout
 
-      # Run standard
       - run:
           name: Code Formatting Check
           command: yarn lint
