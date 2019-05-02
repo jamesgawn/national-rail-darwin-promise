@@ -48,15 +48,14 @@ jobs:
           name: Code Test Coveration
           command: |
             mkdir coverage
-            ./node_modules/.bin/nyc report --reporter=html > coverage/report.html
+            ./node_modules/.bin/nyc report --reporter=html
           when: always
 
       - store_test_results:
           path: ./reports
 
       - store_artifacts:
-          path: ./coverage/report.html
-          prefix: tests
+          path: ./coverage
 
   lint:
     docker:
