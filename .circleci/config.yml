@@ -48,7 +48,7 @@ jobs:
           name: Code Test Coveration
           command: |
             mkdir coverage
-            ./node_modules/.bin/nyc report --reporter=text-lcov > coverage/lcov.info
+            ./node_modules/.bin/nyc report --reporter=text-lcov
           when: always
 
       - store_test_results:
