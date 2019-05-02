@@ -29,16 +29,16 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - persist_to_workspace:
-          root: /repo
+          root: /
           paths:
-            - *
+            - repo
 
   test:
     executor: my-executor
 
     steps:
       - attach_workspace:
-          at: /repo
+          at: /
 
       # Run mocha
       - run:
@@ -64,7 +64,7 @@ jobs:
 
     steps:
       - attach_workspace:
-          at: /repo
+          at: /
 
       - run:
           name: Code Formatting Check
