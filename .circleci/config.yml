@@ -55,7 +55,7 @@ jobs:
           path: ./reports
 
       - store_artifacts:
-          path: ./coverage/lcov.info
+          path: ./coverage/report.html
           prefix: tests
 
   lint:
