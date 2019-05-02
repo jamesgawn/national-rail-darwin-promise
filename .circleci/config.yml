@@ -1,10 +1,14 @@
 version: 2
-jobs:
-  build:
+
+executors:
+  my-executor:
     docker:
       - image: circleci/node:10.15.3
+    working_directory: /repo
 
-    working_directory: ~/repo
+jobs:
+  build:
+    executor: my-executor
 
     steps:
       - checkout
@@ -23,20 +27,18 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-  test:
-    docker:
-      - image: circleci/node:10.15.3
 
-    working_directory: ~/repo
+      - persist_to_workspace:
+          root: /repo
+          paths:
+            - *
+
+  test:
+    executor: my-executor
 
     steps:
-      - checkout
-
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
+      - attach_workspace:
+          at: /repo
 
       # Run mocha
       - run:
@@ -58,20 +60,11 @@ jobs:
           path: ./coverage
 
   lint:
-    docker:
-      # specify the version you desire here
-      - image: circleci/node:10.15.3
-
-    working_directory: ~/repo
+    executor: my-executor
 
     steps:
-      - checkout
-
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
+      - attach_workspace:
+          at: /repo
 
       - run:
           name: Code Formatting Check
