@@ -154,7 +154,16 @@ describe('index', () => {
     })
   })
   describe('getNextDeparture', () => {
-    it('should return results for valid from and to station', async () => {
+    it('should return results for valid from and to station with options specified', async () => {
+      let expectedResult = require('./examples/getNextDepature')
+      let rail = new Rail()
+      let fake = sinon.fake.yields(null, expectedResult)
+      rail.darwin.getNextDeparture = fake
+      let result = await rail.getNextDeparture('GNW', 'CST', { pies: true })
+      expect(result).to.deep.equal(expectedResult)
+      expect(fake).to.be.calledWithExactly('GNW', 'CST', { pies: true }, sinon.match.func)
+    })
+    it('should return results for valid from and to station without options specified', async () => {
       let expectedResult = require('./examples/getNextDepature')
       let rail = new Rail()
       let fake = sinon.fake.yields(null, expectedResult)
@@ -179,7 +188,16 @@ describe('index', () => {
     })
   })
   describe('getNextDepartureWithDetails', () => {
-    it('should return results for valid from and to station', async () => {
+    it('should return results for valid from and to station with options specified', async () => {
+      let expectedResult = require('./examples/getNextDepatureWithDetails')
+      let rail = new Rail()
+      let fake = sinon.fake.yields(null, expectedResult)
+      rail.darwin.getNextDepartureWithDetails = fake
+      let result = await rail.getNextDepartureWithDetails('GNW', 'CST', { pies: true })
+      expect(result).to.deep.equal(expectedResult)
+      expect(fake).to.be.calledWithExactly('GNW', 'CST', { pies: true }, sinon.match.func)
+    })
+    it('should return results for valid from and to station without options specified', async () => {
       let expectedResult = require('./examples/getNextDepatureWithDetails')
       let rail = new Rail()
       let fake = sinon.fake.yields(null, expectedResult)
