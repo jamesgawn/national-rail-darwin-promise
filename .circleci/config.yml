@@ -69,17 +69,6 @@ jobs:
           command: yarn lint
           when: always
 
-  publish:
-    executor: my-executor
-
-    steps:
-      - attach_workspace:
-          at: ~/
-
-      - run:
-          name: NPM Publish
-          command: yarn publish --patch
-
 workflows:
   version: 2.1
   build-test-lint:
@@ -91,8 +80,3 @@ workflows:
       - lint:
           requires:
             - build
-      - publish:
-          requires:
-            - build
-            - test
-            - lint
