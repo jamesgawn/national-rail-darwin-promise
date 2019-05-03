@@ -68,7 +68,6 @@ Gets all public departures for the supplied station within 2 hours, with a list 
 * rows - Maximum number of services to retrieve (1 - 149)
 
 #### getArrivalsBoard
-
 ```
  let result = await rail.getArrivalsBoard('GWN', {})
 ```
@@ -86,3 +85,10 @@ Gets all public arrivals for the supplied station within 2 hours, with a list of
 
 * destination - Only show trains that call at the supplied station
 * rows - Maximum number of services to retrieve (1 - 149)
+
+#### getServiceDetails
+```
+ let result = await rail.getArrivalsBoard('kgjbae3a22a==')
+```
+
+Gets detailed information about a particular service relative to the station that generated the serviceId. ServiceId is returned from other calls such as getDepartureBoard or getNextDeparture. The object returns includes all calling points of the service requested. The data is only available while the particular service is showing on the station departure board. This is normally for up to two minutes after the service is expected to depart.

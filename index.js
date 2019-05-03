@@ -51,6 +51,17 @@ class Rail {
       })
     })
   }
+  async getServiceDetails (service) {
+    return new Promise((resolve, reject) => {
+      this.darwin.getServiceDetails(service, (err, result) => {
+        if (err !== null) {
+          reject(err)
+        } else {
+          resolve(result)
+        }
+      })
+    })
+  }
 }
 
 module.exports = Rail
