@@ -1,105 +1,46 @@
 {
-  "serviceDetails": {
-    "length": "6",
-    "operator": "Southeastern",
-    "operatorCode": "SE",
-    "platform": "1",
-    "previousCallingPoints": [
-      {
-        "crs": "CST",
-        "length": "6",
-        "locationName": "London Cannon Street",
-        "st": "12:24"
+  "trainServices": [
+    {
+      "sta": "14:57",
+      "eta": "On time",
+      "std": "14:57",
+      "etd": "On time",
+      "platform": "2",
+      "operator": "Southeastern",
+      "operatorCode": "SE",
+      "length": "8",
+      "serviceId": "j4PrS09WmuUtNewhl2GavA==",
+      "origin": {
+        "name": "London Cannon Street",
+        "crs": "CST"
       },
-      {
-        "crs": "LBG",
-        "length": "6",
-        "locationName": "London Bridge",
-        "st": "12:28"
+      "destination": {
+        "name": "London Cannon Street",
+        "crs": "CST"
       },
-      {
-        "crs": "DEP",
-        "length": "6",
-        "locationName": "Deptford",
-        "st": "12:35"
-      }
-    ],
-    "sta": "12:37",
-    "std": "12:37",
-    "subsequentCallingPoints": [
-      {
-        "crs": "MZH",
-        "length": "6",
-        "locationName": "Maze Hill",
-        "st": "12:40"
-      },
-      {
-        "crs": "WCB",
-        "length": "6",
-        "locationName": "Westcombe Park",
-        "st": "12:42"
-      },
-      {
-        "crs": "CTN",
-        "length": "6",
-        "locationName": "Charlton",
-        "st": "12:44"
-      },
-      {
-        "crs": "WWD",
-        "length": "6",
-        "locationName": "Woolwich Dockyard",
-        "st": "12:48"
-      },
-      {
-        "crs": "WWA",
-        "et": "On time",
-        "length": "6",
-        "locationName": "Woolwich Arsenal",
-        "st": "12:50"
-      },
-      {
-        "crs": "PLU",
-        "et": "On time",
-        "length": "6",
-        "locationName": "Plumstead",
-        "st": "12:53"
-      },
-      {
-        "crs": "ABW",
-        "et": "On time",
-        "length": "6",
-        "locationName": "Abbey Wood",
-        "st": "12:56"
-      },
-      {
-        "crs": "BVD",
-        "et": "On time",
-        "length": "6",
-        "locationName": "Belvedere",
-        "st": "12:59"
-      },
-      {
-        "crs": "ERH",
-        "et": "On time",
-        "length": "6",
-        "locationName": "Erith",
-        "st": "13:02"
-      },
-      {
-        "crs": "SGR",
-        "et": "On time",
-        "length": "6",
-        "locationName": "Slade Green",
-        "st": "13:06"
-      },
-      {
-        "crs": "BNH",
-        "et": "On time",
-        "length": "6",
-        "locationName": "Barnehurst",
-        "st": "13:15"
-      }
-    ]
-  }
+      "subsequentCallingPoints": [
+        {
+          "locationName": "Deptford",
+          "crs": "DEP",
+          "st": "14:59",
+          "et": "On time",
+          "length": "8"
+        },
+        {
+          "locationName": "London Bridge",
+          "crs": "LBG",
+          "st": "15:05",
+          "et": "On time",
+          "length": "8"
+        },
+        {
+          "locationName": "London Cannon Street",
+          "crs": "CST",
+          "st": "15:11",
+          "et": "On time",
+          "length": "8"
+        }
+      ]
+    }
+  ]
 }

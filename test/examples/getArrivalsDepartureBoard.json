@@ -1,47 +1,15 @@
 {
   "trainServices": [
     {
-      "sta": "11:27",
+      "sta": "14:37",
       "eta": "On time",
-      "platform": "2",
-      "operator": "Southeastern",
-      "operatorCode": "SE",
-      "length": "10",
-      "serviceId": "bITfQ3Pe7mwsMD6GXNIerQ==",
-      "origin": {
-        "name": "London Cannon Street",
-        "crs": "CST"
-      },
-      "destination": {
-        "name": "London Cannon Street",
-        "crs": "CST"
-      }
-    },
-    {
-      "sta": "11:27",
-      "eta": "On time",
-      "platform": "1",
-      "operator": "Thameslink",
-      "operatorCode": "TL",
-      "length": "8",
-      "serviceId": "uV6VfAtUsvIIYtGKg2tO5Q==",
-      "origin": {
-        "name": "Luton",
-        "crs": "LUT"
-      },
-      "destination": {
-        "name": "Rainham (Kent)",
-        "crs": "RAI"
-      }
-    },
-    {
-      "sta": "11:37",
-      "eta": "On time",
+      "std": "14:37",
+      "etd": "On time",
       "platform": "1",
       "operator": "Southeastern",
       "operatorCode": "SE",
       "length": "4",
-      "serviceId": "vedCeL+pB3U2uye8FSP8Rg==",
+      "serviceId": "jgJ85rpIXUQjV+xTUMq2qw==",
       "origin": {
         "name": "London Cannon Street",
         "crs": "CST"
@@ -52,13 +20,15 @@
       }
     },
     {
-      "sta": "11:37",
+      "sta": "14:37",
       "eta": "On time",
+      "std": "14:37",
+      "etd": "On time",
       "platform": "2",
       "operator": "Southeastern",
       "operatorCode": "SE",
-      "length": "10",
-      "serviceId": "R0wZNxaX4QNTml+NrwA3WA==",
+      "length": "4",
+      "serviceId": "0JAmugCqXqWuNjxgGWoj2w==",
       "origin": {
         "name": "Slade Green",
         "crs": "SGR"
@@ -69,13 +39,15 @@
       }
     },
     {
-      "sta": "11:47",
+      "sta": "14:47",
       "eta": "On time",
+      "std": "14:47",
+      "etd": "On time",
       "platform": "1",
       "operator": "Southeastern",
       "operatorCode": "SE",
-      "length": "4",
-      "serviceId": "xtOddir4UrmQ/6M/c7aMlg==",
+      "length": "10",
+      "serviceId": "WncbxBugfQuOJ+Ah3ExAYw==",
       "origin": {
         "name": "London Cannon Street",
         "crs": "CST"
@@ -86,13 +58,15 @@
       }
     },
     {
-      "sta": "11:47",
+      "sta": "14:47",
       "eta": "On time",
+      "std": "14:47",
+      "etd": "On time",
       "platform": "2",
       "operator": "Thameslink",
       "operatorCode": "TL",
       "length": "8",
-      "serviceId": "/GOe0fhw5zLGl/x3fPu7bA==",
+      "serviceId": "xY1OXmtDe+YAydNTWbwCBQ==",
       "origin": {
         "name": "Rainham (Kent)",
         "crs": "RAI"
@@ -103,13 +77,15 @@
       }
     },
     {
-      "sta": "11:57",
+      "sta": "14:57",
       "eta": "On time",
+      "std": "14:57",
+      "etd": "On time",
       "platform": "2",
       "operator": "Southeastern",
       "operatorCode": "SE",
-      "length": "6",
-      "serviceId": "jnuuLOtZxLholS60ZgKRHQ==",
+      "length": "8",
+      "serviceId": "j4PrS09WmuUtNewhl2GavA==",
       "origin": {
         "name": "London Cannon Street",
         "crs": "CST"
@@ -120,13 +96,15 @@
       }
     },
     {
-      "sta": "11:57",
+      "sta": "14:57",
       "eta": "On time",
+      "std": "14:57",
+      "etd": "On time",
       "platform": "1",
       "operator": "Thameslink",
       "operatorCode": "TL",
       "length": "8",
-      "serviceId": "bLZ0olqOxNAmfeIEFAgFYA==",
+      "serviceId": "fw8crdYEPLsVkoN8uOmL+Q==",
       "origin": {
         "name": "Luton",
         "crs": "LUT"
@@ -137,12 +115,15 @@
       }
     },
     {
-      "sta": "12:07",
+      "sta": "15:07",
       "eta": "On time",
+      "std": "15:07",
+      "etd": "On time",
+      "platform": "1",
       "operator": "Southeastern",
       "operatorCode": "SE",
-      "length": "10",
-      "serviceId": "Z/UNwWVglaoGZAizepqVSA==",
+      "length": "8",
+      "serviceId": "W+tWEsAsKDeyiBqdFHBxGw==",
       "origin": {
         "name": "London Cannon Street",
         "crs": "CST"
@@ -153,12 +134,15 @@
       }
     },
     {
-      "sta": "12:07",
+      "sta": "15:07",
       "eta": "On time",
+      "std": "15:07",
+      "etd": "On time",
+      "platform": "2",
       "operator": "Southeastern",
       "operatorCode": "SE",
-      "length": "4",
-      "serviceId": "i+b1ur0akLABEhlwHbW0Xw==",
+      "length": "10",
+      "serviceId": "fdYWES6c8mpHYFh9aip/BA==",
       "origin": {
         "name": "Slade Green",
         "crs": "SGR"
@@ -169,12 +153,14 @@
       }
     },
     {
-      "sta": "12:17",
+      "sta": "15:17",
       "eta": "On time",
+      "std": "15:17",
+      "etd": "On time",
       "operator": "Southeastern",
       "operatorCode": "SE",
-      "length": "4",
-      "serviceId": "KXVRvyLFBkz0VDpXUAk3Hg==",
+      "length": "8",
+      "serviceId": "w+S2w0Dht05yacU/UTt04w==",
       "origin": {
         "name": "London Cannon Street",
         "crs": "CST"
@@ -185,12 +171,14 @@
       }
     },
     {
-      "sta": "12:17",
+      "sta": "15:17",
       "eta": "On time",
+      "std": "15:17",
+      "etd": "On time",
       "operator": "Thameslink",
       "operatorCode": "TL",
       "length": "8",
-      "serviceId": "1s0WPBMS6lRezj0CbBogPw==",
+      "serviceId": "ByVpBLbrFX9N0HFXfiw0cA==",
       "origin": {
         "name": "Rainham (Kent)",
         "crs": "RAI"
@@ -201,12 +189,14 @@
       }
     },
     {
-      "sta": "12:27",
+      "sta": "15:27",
       "eta": "On time",
+      "std": "15:27",
+      "etd": "On time",
       "operator": "Southeastern",
       "operatorCode": "SE",
-      "length": "8",
-      "serviceId": "GtgZKbQnrXoCtFe9FC7CHA==",
+      "length": "10",
+      "serviceId": "qnZRgtWTX16yBut5G+gXNQ==",
       "origin": {
         "name": "London Cannon Street",
         "crs": "CST"
@@ -217,12 +207,14 @@
       }
     },
     {
-      "sta": "12:27",
+      "sta": "15:27",
       "eta": "On time",
+      "std": "15:27",
+      "etd": "On time",
       "operator": "Thameslink",
       "operatorCode": "TL",
       "length": "8",
-      "serviceId": "Pce36SgNvwxXMd6vaE/sMw==",
+      "serviceId": "VhDPMfGtCdUvpao4if/Vkg==",
       "origin": {
         "name": "Luton",
         "crs": "LUT"
@@ -233,12 +225,14 @@
       }
     },
     {
-      "sta": "12:37",
+      "sta": "15:37",
       "eta": "On time",
+      "std": "15:37",
+      "etd": "On time",
       "operator": "Southeastern",
       "operatorCode": "SE",
-      "length": "6",
-      "serviceId": "PcxniJ81G487iKUC6gRhQA==",
+      "length": "8",
+      "serviceId": "f6/4+7Rb2j16UmRsnBwUcA==",
       "origin": {
         "name": "London Cannon Street",
         "crs": "CST"
@@ -246,6 +240,43 @@
       "destination": {
         "name": "Barnehurst",
         "crs": "BNH"
+      }
+    },
+    {
+      "sta": "15:37",
+      "eta": "On time",
+      "std": "15:37",
+      "etd": "On time",
+      "operator": "Southeastern",
+      "operatorCode": "SE",
+      "length": "6",
+      "serviceId": "N6EMLE/jylCP1wwaJYupAw==",
+      "origin": {
+        "name": "Slade Green",
+        "crs": "SGR"
+      },
+      "destination": {
+        "name": "London Cannon Street",
+        "crs": "CST"
+      }
+    },
+    {
+      "sta": "15:47",
+      "eta": "On time",
+      "std": "15:47",
+      "etd": "On time",
+      "operator": "Southeastern",
+      "operatorCode": "SE",
+      "length": "10",
+      "serviceId": "ZJXoIJZFXDXjkBxPvecicw==",
+      "rsid": "SE285400",
+      "origin": {
+        "name": "London Cannon Street",
+        "crs": "CST"
+      },
+      "destination": {
+        "name": "Crayford",
+        "crs": "CRY"
       }
     }
   ]

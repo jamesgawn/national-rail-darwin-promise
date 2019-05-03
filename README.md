@@ -15,8 +15,21 @@ npm install national-rail-darwin-promise
 
 ### Usage
 
-1 requests exposed by the Darwin api are available in `national-rail-darwin-promise`
-- async getDepartureBoard(crsCode, options)
+11 requests exposed by the Darwin api are available in `national-rail-darwin-promise`
+* async getDepartureBoard(crsCode, options)
+* async getDepartureBoardWithDetails(crsCode, options)
+* async getArrivalsBoard(crsCode, options)
+* async getArrivalsBoardWithDetails(crsCode, options)
+* async getArrivalsDepartureBoard(crsCode, options)
+* async getArrivalsDepartureBoardWithDetails(crsCode, options)
+* async getNextDeparture(crsCode, destinationCrsCode, options)
+* async getNextDepartureWithDetails(crsCode, destinationCrsCode, options)
+* async getFastestDeparture(crsCode, destinationCrsCode, options)
+* async getFastestDepartureWithDetails(crsCode, destinationCrsCode, options)
+* async getServiceDetails(serviceId)
+
+And a bonus method to get station details from CRS Code:
+* async getStationDetails(crsCode)
 
 Your api token can either be provided when the client is created or picked up from the environment variable `DARWIN_TOKEN`.
 
@@ -100,7 +113,14 @@ Returns the next train leaving from supplied station calling at the destination 
 
 #### getServiceDetails
 ```
- let result = await rail.getArrivalsBoard('kgjbae3a22a==')
+ let result = await rail.getServiceDetails('kgjbae3a22a==')
 ```
 
 Gets detailed information about a particular service relative to the station that generated the serviceId. ServiceId is returned from other calls such as getDepartureBoard or getNextDeparture. The object returns includes all calling points of the service requested. The data is only available while the particular service is showing on the station departure board. This is normally for up to two minutes after the service is expected to depart.
+
+#### getStationDetails
+```
+ let result = await rail.getStationDetails('GNW')
+```
+
+Gets the full station details from the CRS Code 

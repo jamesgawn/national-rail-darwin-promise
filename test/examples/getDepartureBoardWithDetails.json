@@ -1,8 +1,6 @@
 {
   "trainServices": [
     {
-      "sta": "14:37",
-      "eta": "On time",
       "std": "14:37",
       "etd": "On time",
       "platform": "1",
@@ -18,27 +16,6 @@
         "name": "Barnehurst",
         "crs": "BNH"
       },
-      "previousCallingPoints": [
-        {
-          "locationName": "London Cannon Street",
-          "crs": "CST",
-          "st": "14:24",
-          "length": "4"
-        },
-        {
-          "locationName": "London Bridge",
-          "crs": "LBG",
-          "st": "14:28",
-          "length": "4"
-        },
-        {
-          "locationName": "Deptford",
-          "crs": "DEP",
-          "st": "14:35",
-          "et": "On time",
-          "length": "4"
-        }
-      ],
       "subsequentCallingPoints": [
         {
           "locationName": "Maze Hill",
@@ -120,8 +97,6 @@
       ]
     },
     {
-      "sta": "14:37",
-      "eta": "On time",
       "std": "14:37",
       "etd": "On time",
       "platform": "2",
@@ -137,69 +112,6 @@
         "name": "London Cannon Street",
         "crs": "CST"
       },
-      "previousCallingPoints": [
-        {
-          "locationName": "Slade Green",
-          "crs": "SGR",
-          "st": "14:09",
-          "length": "4"
-        },
-        {
-          "locationName": "Erith",
-          "crs": "ERH",
-          "st": "14:12",
-          "length": "4"
-        },
-        {
-          "locationName": "Belvedere",
-          "crs": "BVD",
-          "st": "14:14",
-          "length": "4"
-        },
-        {
-          "locationName": "Abbey Wood",
-          "crs": "ABW",
-          "st": "14:18",
-          "length": "4"
-        },
-        {
-          "locationName": "Plumstead",
-          "crs": "PLU",
-          "st": "14:21",
-          "length": "4"
-        },
-        {
-          "locationName": "Woolwich Arsenal",
-          "crs": "WWA",
-          "st": "14:24",
-          "length": "4"
-        },
-        {
-          "locationName": "Woolwich Dockyard",
-          "crs": "WWD",
-          "st": "14:26",
-          "length": "4"
-        },
-        {
-          "locationName": "Charlton",
-          "crs": "CTN",
-          "st": "14:30",
-          "length": "4"
-        },
-        {
-          "locationName": "Westcombe Park",
-          "crs": "WCB",
-          "st": "14:32",
-          "length": "4"
-        },
-        {
-          "locationName": "Maze Hill",
-          "crs": "MZH",
-          "st": "14:34",
-          "et": "On time",
-          "length": "4"
-        }
-      ],
       "subsequentCallingPoints": [
         {
           "locationName": "Deptford",
@@ -225,8 +137,6 @@
       ]
     },
     {
-      "sta": "14:47",
-      "eta": "On time",
       "std": "14:47",
       "etd": "On time",
       "platform": "1",
@@ -242,29 +152,6 @@
         "name": "Crayford",
         "crs": "CRY"
       },
-      "previousCallingPoints": [
-        {
-          "locationName": "London Cannon Street",
-          "crs": "CST",
-          "st": "14:35",
-          "et": "On time",
-          "length": "10"
-        },
-        {
-          "locationName": "London Bridge",
-          "crs": "LBG",
-          "st": "14:39",
-          "et": "On time",
-          "length": "10"
-        },
-        {
-          "locationName": "Deptford",
-          "crs": "DEP",
-          "st": "14:45",
-          "et": "On time",
-          "length": "10"
-        }
-      ],
       "subsequentCallingPoints": [
         {
           "locationName": "Maze Hill",
@@ -346,8 +233,6 @@
       ]
     },
     {
-      "sta": "14:47",
-      "eta": "On time",
       "std": "14:47",
       "etd": "On time",
       "platform": "2",
@@ -363,126 +248,6 @@
         "name": "Luton",
         "crs": "LUT"
       },
-      "previousCallingPoints": [
-        {
-          "locationName": "Rainham (Kent)",
-          "crs": "RAI",
-          "st": "13:28",
-          "length": "8"
-        },
-        {
-          "locationName": "Gillingham (Kent)",
-          "crs": "GLM",
-          "st": "13:34",
-          "length": "8"
-        },
-        {
-          "locationName": "Chatham",
-          "crs": "CTM",
-          "st": "13:38",
-          "length": "8"
-        },
-        {
-          "locationName": "Rochester",
-          "crs": "RTR",
-          "st": "13:42",
-          "length": "8"
-        },
-        {
-          "locationName": "Strood",
-          "crs": "SOO",
-          "st": "13:45",
-          "length": "8"
-        },
-        {
-          "locationName": "Higham",
-          "crs": "HGM",
-          "st": "13:50",
-          "length": "8"
-        },
-        {
-          "locationName": "Gravesend",
-          "crs": "GRV",
-          "st": "13:59",
-          "length": "8"
-        },
-        {
-          "locationName": "Northfleet",
-          "crs": "NFL",
-          "st": "14:02",
-          "length": "8"
-        },
-        {
-          "locationName": "Swanscombe",
-          "crs": "SWM",
-          "st": "14:04",
-          "length": "8"
-        },
-        {
-          "locationName": "Greenhithe for Bluewater",
-          "crs": "GNH",
-          "st": "14:08",
-          "length": "8"
-        },
-        {
-          "locationName": "Stone Crossing",
-          "crs": "SCG",
-          "st": "14:10",
-          "length": "8"
-        },
-        {
-          "locationName": "Dartford",
-          "crs": "DFD",
-          "st": "14:15",
-          "length": "8"
-        },
-        {
-          "locationName": "Slade Green",
-          "crs": "SGR",
-          "st": "14:21",
-          "length": "8"
-        },
-        {
-          "locationName": "Abbey Wood",
-          "crs": "ABW",
-          "st": "14:28",
-          "length": "8"
-        },
-        {
-          "locationName": "Plumstead",
-          "crs": "PLU",
-          "st": "14:31",
-          "length": "8"
-        },
-        {
-          "locationName": "Woolwich Arsenal",
-          "crs": "WWA",
-          "st": "14:34",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Charlton",
-          "crs": "CTN",
-          "st": "14:40",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Westcombe Park",
-          "crs": "WCB",
-          "st": "14:42",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Maze Hill",
-          "crs": "MZH",
-          "st": "14:44",
-          "et": "On time",
-          "length": "8"
-        }
-      ],
       "subsequentCallingPoints": [
         {
           "locationName": "Deptford",
@@ -585,8 +350,6 @@
       ]
     },
     {
-      "sta": "14:57",
-      "eta": "On time",
       "std": "14:57",
       "etd": "On time",
       "platform": "2",
@@ -602,154 +365,6 @@
         "name": "London Cannon Street",
         "crs": "CST"
       },
-      "previousCallingPoints": [
-        {
-          "locationName": "London Cannon Street",
-          "crs": "CST",
-          "st": "13:38",
-          "length": "8"
-        },
-        {
-          "locationName": "London Bridge",
-          "crs": "LBG",
-          "st": "13:43",
-          "length": "8"
-        },
-        {
-          "locationName": "New Cross",
-          "crs": "NWX",
-          "st": "13:49",
-          "length": "8"
-        },
-        {
-          "locationName": "St Johns",
-          "crs": "SAJ",
-          "st": "13:51",
-          "length": "8"
-        },
-        {
-          "locationName": "Lewisham",
-          "crs": "LEW",
-          "st": "13:54",
-          "length": "8"
-        },
-        {
-          "locationName": "Hither Green",
-          "crs": "HGR",
-          "st": "13:59",
-          "length": "8"
-        },
-        {
-          "locationName": "Lee",
-          "crs": "LEE",
-          "st": "14:01",
-          "length": "8"
-        },
-        {
-          "locationName": "Mottingham",
-          "crs": "MTG",
-          "st": "14:04",
-          "length": "8"
-        },
-        {
-          "locationName": "New Eltham",
-          "crs": "NEH",
-          "st": "14:07",
-          "length": "8"
-        },
-        {
-          "locationName": "Sidcup",
-          "crs": "SID",
-          "st": "14:10",
-          "length": "8"
-        },
-        {
-          "locationName": "Albany Park",
-          "crs": "AYP",
-          "st": "14:13",
-          "length": "8"
-        },
-        {
-          "locationName": "Bexley",
-          "crs": "BXY",
-          "st": "14:15",
-          "length": "8"
-        },
-        {
-          "locationName": "Crayford",
-          "crs": "CRY",
-          "st": "14:21",
-          "length": "8"
-        },
-        {
-          "locationName": "Slade Green",
-          "crs": "SGR",
-          "st": "14:29",
-          "length": "8"
-        },
-        {
-          "locationName": "Erith",
-          "crs": "ERH",
-          "st": "14:32",
-          "length": "8"
-        },
-        {
-          "locationName": "Belvedere",
-          "crs": "BVD",
-          "st": "14:34",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Abbey Wood",
-          "crs": "ABW",
-          "st": "14:38",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Plumstead",
-          "crs": "PLU",
-          "st": "14:41",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Woolwich Arsenal",
-          "crs": "WWA",
-          "st": "14:44",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Woolwich Dockyard",
-          "crs": "WWD",
-          "st": "14:46",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Charlton",
-          "crs": "CTN",
-          "st": "14:50",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Westcombe Park",
-          "crs": "WCB",
-          "st": "14:52",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Maze Hill",
-          "crs": "MZH",
-          "st": "14:54",
-          "et": "On time",
-          "length": "8"
-        }
-      ],
       "subsequentCallingPoints": [
         {
           "locationName": "Deptford",
@@ -775,8 +390,6 @@
       ]
     },
     {
-      "sta": "14:57",
-      "eta": "On time",
       "std": "14:57",
       "etd": "On time",
       "platform": "1",
@@ -792,97 +405,6 @@
         "name": "Rainham (Kent)",
         "crs": "RAI"
       },
-      "previousCallingPoints": [
-        {
-          "locationName": "Luton",
-          "crs": "LUT",
-          "st": "13:48",
-          "length": "8"
-        },
-        {
-          "locationName": "Luton Airport Parkway",
-          "crs": "LTN",
-          "st": "13:51",
-          "length": "8"
-        },
-        {
-          "locationName": "Harpenden",
-          "crs": "HPD",
-          "st": "13:56",
-          "length": "8"
-        },
-        {
-          "locationName": "St Albans",
-          "crs": "SAC",
-          "st": "14:01",
-          "length": "8"
-        },
-        {
-          "locationName": "Radlett",
-          "crs": "RDT",
-          "st": "14:06",
-          "length": "8"
-        },
-        {
-          "locationName": "Elstree & Borehamwood",
-          "crs": "ELS",
-          "st": "14:10",
-          "length": "8"
-        },
-        {
-          "locationName": "Mill Hill Broadway",
-          "crs": "MIL",
-          "st": "14:14",
-          "length": "8"
-        },
-        {
-          "locationName": "West Hampstead Thameslink",
-          "crs": "WHP",
-          "st": "14:21",
-          "length": "8"
-        },
-        {
-          "locationName": "London St Pancras (Intl)",
-          "crs": "STP",
-          "st": "14:32",
-          "length": "8"
-        },
-        {
-          "locationName": "Farringdon Underground",
-          "crs": "ZFD",
-          "st": "14:37",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "City Thameslink",
-          "crs": "CTK",
-          "st": "14:39",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "London Blackfriars",
-          "crs": "BFR",
-          "st": "14:41",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "London Bridge",
-          "crs": "LBG",
-          "st": "14:48",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Deptford",
-          "crs": "DEP",
-          "st": "14:55",
-          "et": "On time",
-          "length": "8"
-        }
-      ],
       "subsequentCallingPoints": [
         {
           "locationName": "Maze Hill",
@@ -1020,8 +542,6 @@
       ]
     },
     {
-      "sta": "15:07",
-      "eta": "On time",
       "std": "15:07",
       "etd": "On time",
       "platform": "1",
@@ -1037,29 +557,6 @@
         "name": "Barnehurst",
         "crs": "BNH"
       },
-      "previousCallingPoints": [
-        {
-          "locationName": "London Cannon Street",
-          "crs": "CST",
-          "st": "14:54",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "London Bridge",
-          "crs": "LBG",
-          "st": "14:58",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Deptford",
-          "crs": "DEP",
-          "st": "15:05",
-          "et": "On time",
-          "length": "8"
-        }
-      ],
       "subsequentCallingPoints": [
         {
           "locationName": "Maze Hill",
@@ -1141,8 +638,6 @@
       ]
     },
     {
-      "sta": "15:07",
-      "eta": "On time",
       "std": "15:07",
       "etd": "On time",
       "platform": "2",
@@ -1158,78 +653,6 @@
         "name": "London Cannon Street",
         "crs": "CST"
       },
-      "previousCallingPoints": [
-        {
-          "locationName": "Slade Green",
-          "crs": "SGR",
-          "st": "14:39",
-          "et": "On time",
-          "length": "10"
-        },
-        {
-          "locationName": "Erith",
-          "crs": "ERH",
-          "st": "14:42",
-          "et": "On time",
-          "length": "10"
-        },
-        {
-          "locationName": "Belvedere",
-          "crs": "BVD",
-          "st": "14:44",
-          "et": "On time",
-          "length": "10"
-        },
-        {
-          "locationName": "Abbey Wood",
-          "crs": "ABW",
-          "st": "14:48",
-          "et": "On time",
-          "length": "10"
-        },
-        {
-          "locationName": "Plumstead",
-          "crs": "PLU",
-          "st": "14:51",
-          "et": "On time",
-          "length": "10"
-        },
-        {
-          "locationName": "Woolwich Arsenal",
-          "crs": "WWA",
-          "st": "14:54",
-          "et": "On time",
-          "length": "10"
-        },
-        {
-          "locationName": "Woolwich Dockyard",
-          "crs": "WWD",
-          "st": "14:56",
-          "et": "On time",
-          "length": "10"
-        },
-        {
-          "locationName": "Charlton",
-          "crs": "CTN",
-          "st": "15:00",
-          "et": "On time",
-          "length": "10"
-        },
-        {
-          "locationName": "Westcombe Park",
-          "crs": "WCB",
-          "st": "15:02",
-          "et": "On time",
-          "length": "10"
-        },
-        {
-          "locationName": "Maze Hill",
-          "crs": "MZH",
-          "st": "15:04",
-          "et": "On time",
-          "length": "10"
-        }
-      ],
       "subsequentCallingPoints": [
         {
           "locationName": "Deptford",
@@ -1255,8 +678,6 @@
       ]
     },
     {
-      "sta": "15:17",
-      "eta": "On time",
       "std": "15:17",
       "etd": "On time",
       "operator": "Southeastern",
@@ -1271,29 +692,6 @@
         "name": "Crayford",
         "crs": "CRY"
       },
-      "previousCallingPoints": [
-        {
-          "locationName": "London Cannon Street",
-          "crs": "CST",
-          "st": "15:05",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "London Bridge",
-          "crs": "LBG",
-          "st": "15:09",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Deptford",
-          "crs": "DEP",
-          "st": "15:15",
-          "et": "On time",
-          "length": "8"
-        }
-      ],
       "subsequentCallingPoints": [
         {
           "locationName": "Maze Hill",
@@ -1375,8 +773,6 @@
       ]
     },
     {
-      "sta": "15:17",
-      "eta": "On time",
       "std": "15:17",
       "etd": "On time",
       "operator": "Thameslink",
@@ -1391,134 +787,6 @@
         "name": "Luton",
         "crs": "LUT"
       },
-      "previousCallingPoints": [
-        {
-          "locationName": "Rainham (Kent)",
-          "crs": "RAI",
-          "st": "13:58",
-          "length": "8"
-        },
-        {
-          "locationName": "Gillingham (Kent)",
-          "crs": "GLM",
-          "st": "14:04",
-          "length": "8"
-        },
-        {
-          "locationName": "Chatham",
-          "crs": "CTM",
-          "st": "14:08",
-          "length": "8"
-        },
-        {
-          "locationName": "Rochester",
-          "crs": "RTR",
-          "st": "14:12",
-          "length": "8"
-        },
-        {
-          "locationName": "Strood",
-          "crs": "SOO",
-          "st": "14:15",
-          "length": "8"
-        },
-        {
-          "locationName": "Higham",
-          "crs": "HGM",
-          "st": "14:20",
-          "length": "8"
-        },
-        {
-          "locationName": "Gravesend",
-          "crs": "GRV",
-          "st": "14:29",
-          "length": "8"
-        },
-        {
-          "locationName": "Northfleet",
-          "crs": "NFL",
-          "st": "14:32",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Swanscombe",
-          "crs": "SWM",
-          "st": "14:34",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Greenhithe for Bluewater",
-          "crs": "GNH",
-          "st": "14:38",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Stone Crossing",
-          "crs": "SCG",
-          "st": "14:40",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Dartford",
-          "crs": "DFD",
-          "st": "14:45",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Slade Green",
-          "crs": "SGR",
-          "st": "14:51",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Abbey Wood",
-          "crs": "ABW",
-          "st": "14:58",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Plumstead",
-          "crs": "PLU",
-          "st": "15:01",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Woolwich Arsenal",
-          "crs": "WWA",
-          "st": "15:04",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Charlton",
-          "crs": "CTN",
-          "st": "15:10",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Westcombe Park",
-          "crs": "WCB",
-          "st": "15:12",
-          "et": "On time",
-          "length": "8"
-        },
-        {
-          "locationName": "Maze Hill",
-          "crs": "MZH",
-          "st": "15:14",
-          "et": "On time",
-          "length": "8"
-        }
-      ],
       "subsequentCallingPoints": [
         {
           "locationName": "Deptford",
