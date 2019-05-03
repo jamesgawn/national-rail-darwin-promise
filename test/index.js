@@ -2,6 +2,8 @@ const { describe, it } = require('mocha')
 const chai = require('chai')
 const chaiAsPromised = require('chai-as-promised')
 chai.use(chaiAsPromised)
+const sinonChai = require('sinon-chai')
+chai.use(sinonChai)
 const sinon = require('sinon')
 const expect = require('chai').expect
 const Rail = require('../index')
@@ -32,8 +34,11 @@ describe('index', () => {
       let expectedResult = require('./examples/getDepartureBoard')
       let apiKey = 'dummy-key'
       let rail = new Rail(apiKey)
-      rail.darwin.getDepartureBoard = sinon.stub().resolves(expectedResult)
+      let stub = sinon.stub()
+      rail.darwin.getDepartureBoard = stub
+      stub.resolves(expectedResult)
       expect(rail.getDepartureBoard('TEST', {})).to.eventually.deep.equal(expectedResult)
+      expect(stub).to.be.calledWith('TEST', {})
     })
   })
   describe('getDepartureBoard', () => {
@@ -43,8 +48,11 @@ describe('index', () => {
       let error = {
         bang: true
       }
-      rail.darwin.getDepartureBoard = sinon.stub().throws(error)
+      let stub = sinon.stub()
+      rail.darwin.getDepartureBoard = stub
+      stub.throws(error)
       expect(rail.getDepartureBoard('TEST', {})).to.eventually.throw(error)
+      expect(stub).to.be.calledWith('TEST')
     })
   })
 })
