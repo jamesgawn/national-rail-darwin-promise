@@ -51,6 +51,28 @@ class Rail {
       })
     })
   }
+  async getArrivalsDepartureBoard (station, options) {
+    return new Promise((resolve, reject) => {
+      this.darwin.getArrivalsDepartureBoard(station, options, (err, result) => {
+        if (err !== null) {
+          reject(err)
+        } else {
+          resolve(result)
+        }
+      })
+    })
+  }
+  async getArrivalsDepartureBoardWithDetails (station, options) {
+    return new Promise((resolve, reject) => {
+      this.darwin.getArrivalsDepartureBoardWithDetails(station, options, (err, result) => {
+        if (err !== null) {
+          reject(err)
+        } else {
+          resolve(result)
+        }
+      })
+    })
+  }
   async getNextDeparture (station, destination, options) {
     if (typeof options === 'undefined') options = {}
     return new Promise((resolve, reject) => {
@@ -67,6 +89,30 @@ class Rail {
     if (typeof options === 'undefined') options = {}
     return new Promise((resolve, reject) => {
       this.darwin.getNextDepartureWithDetails(station, destination, options, (err, result) => {
+        if (err !== null) {
+          reject(err)
+        } else {
+          resolve(result)
+        }
+      })
+    })
+  }
+  async getFastestDeparture (station, destination, options) {
+    if (typeof options === 'undefined') options = {}
+    return new Promise((resolve, reject) => {
+      this.darwin.getFastestDeparture(station, destination, options, (err, result) => {
+        if (err !== null) {
+          reject(err)
+        } else {
+          resolve(result)
+        }
+      })
+    })
+  }
+  async getFastestDepartureWithDetails (station, destination, options) {
+    if (typeof options === 'undefined') options = {}
+    return new Promise((resolve, reject) => {
+      this.darwin.getFastestDepartureWithDetails(station, destination, options, (err, result) => {
         if (err !== null) {
           reject(err)
         } else {
