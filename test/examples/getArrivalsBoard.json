@@ -1,0 +1,252 @@
+{
+  "trainServices": [
+    {
+      "sta": "11:27",
+      "eta": "On time",
+      "platform": "2",
+      "operator": "Southeastern",
+      "operatorCode": "SE",
+      "length": "10",
+      "serviceId": "bITfQ3Pe7mwsMD6GXNIerQ==",
+      "origin": {
+        "name": "London Cannon Street",
+        "crs": "CST"
+      },
+      "destination": {
+        "name": "London Cannon Street",
+        "crs": "CST"
+      }
+    },
+    {
+      "sta": "11:27",
+      "eta": "On time",
+      "platform": "1",
+      "operator": "Thameslink",
+      "operatorCode": "TL",
+      "length": "8",
+      "serviceId": "uV6VfAtUsvIIYtGKg2tO5Q==",
+      "origin": {
+        "name": "Luton",
+        "crs": "LUT"
+      },
+      "destination": {
+        "name": "Rainham (Kent)",
+        "crs": "RAI"
+      }
+    },
+    {
+      "sta": "11:37",
+      "eta": "On time",
+      "platform": "1",
+      "operator": "Southeastern",
+      "operatorCode": "SE",
+      "length": "4",
+      "serviceId": "vedCeL+pB3U2uye8FSP8Rg==",
+      "origin": {
+        "name": "London Cannon Street",
+        "crs": "CST"
+      },
+      "destination": {
+        "name": "Barnehurst",
+        "crs": "BNH"
+      }
+    },
+    {
+      "sta": "11:37",
+      "eta": "On time",
+      "platform": "2",
+      "operator": "Southeastern",
+      "operatorCode": "SE",
+      "length": "10",
+      "serviceId": "R0wZNxaX4QNTml+NrwA3WA==",
+      "origin": {
+        "name": "Slade Green",
+        "crs": "SGR"
+      },
+      "destination": {
+        "name": "London Cannon Street",
+        "crs": "CST"
+      }
+    },
+    {
+      "sta": "11:47",
+      "eta": "On time",
+      "platform": "1",
+      "operator": "Southeastern",
+      "operatorCode": "SE",
+      "length": "4",
+      "serviceId": "xtOddir4UrmQ/6M/c7aMlg==",
+      "origin": {
+        "name": "London Cannon Street",
+        "crs": "CST"
+      },
+      "destination": {
+        "name": "Crayford",
+        "crs": "CRY"
+      }
+    },
+    {
+      "sta": "11:47",
+      "eta": "On time",
+      "platform": "2",
+      "operator": "Thameslink",
+      "operatorCode": "TL",
+      "length": "8",
+      "serviceId": "/GOe0fhw5zLGl/x3fPu7bA==",
+      "origin": {
+        "name": "Rainham (Kent)",
+        "crs": "RAI"
+      },
+      "destination": {
+        "name": "Luton",
+        "crs": "LUT"
+      }
+    },
+    {
+      "sta": "11:57",
+      "eta": "On time",
+      "platform": "2",
+      "operator": "Southeastern",
+      "operatorCode": "SE",
+      "length": "6",
+      "serviceId": "jnuuLOtZxLholS60ZgKRHQ==",
+      "origin": {
+        "name": "London Cannon Street",
+        "crs": "CST"
+      },
+      "destination": {
+        "name": "London Cannon Street",
+        "crs": "CST"
+      }
+    },
+    {
+      "sta": "11:57",
+      "eta": "On time",
+      "platform": "1",
+      "operator": "Thameslink",
+      "operatorCode": "TL",
+      "length": "8",
+      "serviceId": "bLZ0olqOxNAmfeIEFAgFYA==",
+      "origin": {
+        "name": "Luton",
+        "crs": "LUT"
+      },
+      "destination": {
+        "name": "Rainham (Kent)",
+        "crs": "RAI"
+      }
+    },
+    {
+      "sta": "12:07",
+      "eta": "On time",
+      "operator": "Southeastern",
+      "operatorCode": "SE",
+      "length": "10",
+      "serviceId": "Z/UNwWVglaoGZAizepqVSA==",
+      "origin": {
+        "name": "London Cannon Street",
+        "crs": "CST"
+      },
+      "destination": {
+        "name": "Barnehurst",
+        "crs": "BNH"
+      }
+    },
+    {
+      "sta": "12:07",
+      "eta": "On time",
+      "operator": "Southeastern",
+      "operatorCode": "SE",
+      "length": "4",
+      "serviceId": "i+b1ur0akLABEhlwHbW0Xw==",
+      "origin": {
+        "name": "Slade Green",
+        "crs": "SGR"
+      },
+      "destination": {
+        "name": "London Cannon Street",
+        "crs": "CST"
+      }
+    },
+    {
+      "sta": "12:17",
+      "eta": "On time",
+      "operator": "Southeastern",
+      "operatorCode": "SE",
+      "length": "4",
+      "serviceId": "KXVRvyLFBkz0VDpXUAk3Hg==",
+      "origin": {
+        "name": "London Cannon Street",
+        "crs": "CST"
+      },
+      "destination": {
+        "name": "Crayford",
+        "crs": "CRY"
+      }
+    },
+    {
+      "sta": "12:17",
+      "eta": "On time",
+      "operator": "Thameslink",
+      "operatorCode": "TL",
+      "length": "8",
+      "serviceId": "1s0WPBMS6lRezj0CbBogPw==",
+      "origin": {
+        "name": "Rainham (Kent)",
+        "crs": "RAI"
+      },
+      "destination": {
+        "name": "Luton",
+        "crs": "LUT"
+      }
+    },
+    {
+      "sta": "12:27",
+      "eta": "On time",
+      "operator": "Southeastern",
+      "operatorCode": "SE",
+      "length": "8",
+      "serviceId": "GtgZKbQnrXoCtFe9FC7CHA==",
+      "origin": {
+        "name": "London Cannon Street",
+        "crs": "CST"
+      },
+      "destination": {
+        "name": "London Cannon Street",
+        "crs": "CST"
+      }
+    },
+    {
+      "sta": "12:27",
+      "eta": "On time",
+      "operator": "Thameslink",
+      "operatorCode": "TL",
+      "length": "8",
+      "serviceId": "Pce36SgNvwxXMd6vaE/sMw==",
+      "origin": {
+        "name": "Luton",
+        "crs": "LUT"
+      },
+      "destination": {
+        "name": "Rainham (Kent)",
+        "crs": "RAI"
+      }
+    },
+    {
+      "sta": "12:37",
+      "eta": "On time",
+      "operator": "Southeastern",
+      "operatorCode": "SE",
+      "length": "6",
+      "serviceId": "PcxniJ81G487iKUC6gRhQA==",
+      "origin": {
+        "name": "London Cannon Street",
+        "crs": "CST"
+      },
+      "destination": {
+        "name": "Barnehurst",
+        "crs": "BNH"
+      }
+    }
+  ]
+}

@@ -7,9 +7,42 @@ class Rail {
 
     this.darwin = new Darwin(this.apiKey, options)
   }
-  async getDepartureBoard (departureStation, options) {
+  async getDepartureBoard (station, options) {
     return new Promise((resolve, reject) => {
-      this.darwin.getDepartureBoard(departureStation, options, (err, result) => {
+      this.darwin.getDepartureBoard(station, options, (err, result) => {
+        if (err !== null) {
+          reject(err)
+        } else {
+          resolve(result)
+        }
+      })
+    })
+  }
+  async getDepartureBoardWithDetails (station, options) {
+    return new Promise((resolve, reject) => {
+      this.darwin.getDepartureBoardWithDetails(station, options, (err, result) => {
+        if (err !== null) {
+          reject(err)
+        } else {
+          resolve(result)
+        }
+      })
+    })
+  }
+  async getArrivalsBoard (station, options) {
+    return new Promise((resolve, reject) => {
+      this.darwin.getArrivalsBoard(station, options, (err, result) => {
+        if (err !== null) {
+          reject(err)
+        } else {
+          resolve(result)
+        }
+      })
+    })
+  }
+  async getArrivalsBoardWithDetails (station, options) {
+    return new Promise((resolve, reject) => {
+      this.darwin.getArrivalsBoardWithDetails(station, options, (err, result) => {
         if (err !== null) {
           reject(err)
         } else {

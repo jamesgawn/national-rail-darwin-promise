@@ -25,10 +25,6 @@ Your api token can either be provided when the client is created or picked up fr
   var rail = new Rail() // or -> new Rail(DARWIN_TOKEN)
 ```
 
-### Options
-
-Some functions take an options object. See the specific method definitions for details of these.
-
 ###Methods
 
 All methods return arrays of basic service objects of the form:
@@ -55,9 +51,38 @@ All methods return arrays of basic service objects of the form:
 
 #### getDepartureBoard
 ```
- let result = await rail.getDepartureBoard('WAT', {})
+ let result = await rail.getDepartureBoard('GWN', {})
 ```
 Gets all public departures for the supplied station within 2 hours. The options are:
+
+* destination - Only show trains that call at the supplied station
+* rows - Maximum number of services to retrieve (1 - 149)
+
+#### getDepartureBoardWithDetails
+```
+ let result = await rail.getDepartureBoardWithDetails('GWN', {})
+```
+Gets all public departures for the supplied station within 2 hours, with a list of future calling points for each service. The options are:
+
+* destination - Only show trains that call at the supplied station
+* rows - Maximum number of services to retrieve (1 - 149)
+
+#### getArrivalsBoard
+
+```
+ let result = await rail.getArrivalsBoard('GWN', {})
+```
+
+Gets all public arrivals for the supplied station within 2 hours. The options are:
+
+* destination - Only show trains that have called at the supplied station.
+* rows - Maximum number of services to retrieve.
+
+#### getArrivalsBoardWithDetails
+```
+ let result = await rail.getArrivalsBoardWithDetails('GWN', {})
+```
+Gets all public arrivals for the supplied station within 2 hours, with a list of future calling points for each service. The options are:
 
 * destination - Only show trains that call at the supplied station
 * rows - Maximum number of services to retrieve (1 - 149)
