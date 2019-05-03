@@ -51,6 +51,30 @@ class Rail {
       })
     })
   }
+  async getNextDeparture (station, destination, options) {
+    if (typeof options === 'undefined') options = {}
+    return new Promise((resolve, reject) => {
+      this.darwin.getNextDeparture(station, destination, options, (err, result) => {
+        if (err !== null) {
+          reject(err)
+        } else {
+          resolve(result)
+        }
+      })
+    })
+  }
+  async getNextDepartureWithDetails (station, destination, options) {
+    if (typeof options === 'undefined') options = {}
+    return new Promise((resolve, reject) => {
+      this.darwin.getNextDepartureWithDetails(station, destination, options, (err, result) => {
+        if (err !== null) {
+          reject(err)
+        } else {
+          resolve(result)
+        }
+      })
+    })
+  }
   async getServiceDetails (service) {
     return new Promise((resolve, reject) => {
       this.darwin.getServiceDetails(service, (err, result) => {

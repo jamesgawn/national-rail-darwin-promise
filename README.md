@@ -86,6 +86,18 @@ Gets all public arrivals for the supplied station within 2 hours, with a list of
 * destination - Only show trains that call at the supplied station
 * rows - Maximum number of services to retrieve (1 - 149)
 
+#### getNextDeparture
+```
+ let result = await rail.getNextDeparture('GWN', {})
+```
+Returns the next train leaving from supplied station calling at the destination CRS Code.
+
+#### getNextDepartureWithDetails
+```
+ let result = await rail.getNextDepartureWithDetails('GWN', {})
+```
+Returns the next train leaving from supplied station calling at the destination CRS Code, with a list of future calling points for the service.
+
 #### getServiceDetails
 ```
  let result = await rail.getArrivalsBoard('kgjbae3a22a==')
