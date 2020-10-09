@@ -1,7 +1,6 @@
 # national-rail-darwin-promise
 
-[![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-[![CircleCI](https://circleci.com/gh/jamesgawn/national-rail-darwin-promise.svg?style=svg)](https://circleci.com/gh/jamesgawn/national-rail-darwin-promise)
+![Node.js CI](https://github.com/jamesgawn/national-rail-darwin-promise/workflows/Node.js%20CI/badge.svg)
 
 ## Introduction
 
