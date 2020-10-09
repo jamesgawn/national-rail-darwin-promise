@@ -7,6 +7,7 @@ class Rail {
 
     this.darwin = new Darwin(this.apiKey, options)
   }
+
   async getDepartureBoard (crsCode, options) {
     return new Promise((resolve, reject) => {
       this.darwin.getDepartureBoard(crsCode, options, (err, result) => {
@@ -18,6 +19,7 @@ class Rail {
       })
     })
   }
+
   async getDepartureBoardWithDetails (crsCode, options) {
     return new Promise((resolve, reject) => {
       this.darwin.getDepartureBoardWithDetails(crsCode, options, (err, result) => {
@@ -29,6 +31,7 @@ class Rail {
       })
     })
   }
+
   async getArrivalsBoard (crsCode, options) {
     return new Promise((resolve, reject) => {
       this.darwin.getArrivalsBoard(crsCode, options, (err, result) => {
@@ -40,6 +43,7 @@ class Rail {
       })
     })
   }
+
   async getArrivalsBoardWithDetails (crsCode, options) {
     return new Promise((resolve, reject) => {
       this.darwin.getArrivalsBoardWithDetails(crsCode, options, (err, result) => {
@@ -51,6 +55,7 @@ class Rail {
       })
     })
   }
+
   async getArrivalsDepartureBoard (crsCode, options) {
     return new Promise((resolve, reject) => {
       this.darwin.getArrivalsDepartureBoard(crsCode, options, (err, result) => {
@@ -62,6 +67,7 @@ class Rail {
       })
     })
   }
+
   async getArrivalsDepartureBoardWithDetails (crsCode, options) {
     return new Promise((resolve, reject) => {
       this.darwin.getArrivalsDepartureBoardWithDetails(crsCode, options, (err, result) => {
@@ -73,6 +79,7 @@ class Rail {
       })
     })
   }
+
   async getNextDeparture (crsCode, destinationCrsCode, options) {
     if (typeof options === 'undefined') options = {}
     return new Promise((resolve, reject) => {
@@ -85,6 +92,7 @@ class Rail {
       })
     })
   }
+
   async getNextDepartureWithDetails (crsCode, destinationCrsCode, options) {
     if (typeof options === 'undefined') options = {}
     return new Promise((resolve, reject) => {
@@ -97,6 +105,7 @@ class Rail {
       })
     })
   }
+
   async getFastestDeparture (crsCode, destinationCrsCode, options) {
     if (typeof options === 'undefined') options = {}
     return new Promise((resolve, reject) => {
@@ -109,6 +118,7 @@ class Rail {
       })
     })
   }
+
   async getFastestDepartureWithDetails (crsCode, destinationCrsCode, options) {
     if (typeof options === 'undefined') options = {}
     return new Promise((resolve, reject) => {
@@ -121,6 +131,7 @@ class Rail {
       })
     })
   }
+
   async getServiceDetails (serviceId) {
     return new Promise((resolve, reject) => {
       this.darwin.getServiceDetails(serviceId, (err, result) => {
@@ -132,6 +143,7 @@ class Rail {
       })
     })
   }
+
   async getStationDetails (crsCode) {
     return new Promise((resolve, reject) => {
       this.darwin.getStationDetails(crsCode, (err, result) => {

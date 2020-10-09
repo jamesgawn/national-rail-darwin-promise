@@ -9,40 +9,40 @@ const Rail = require('../index')
 describe('index', () => {
   describe('constructor', () => {
     it('should accept API key from constructor', () => {
-      let apiKey = 'dummy-key'
-      let options = {
+      const apiKey = 'dummy-key'
+      const options = {
         option1: true,
         option2: 'pies'
       }
-      let rail = new Rail(apiKey, options)
+      const rail = new Rail(apiKey, options)
 
       expect(rail.apiKey).to.equal(apiKey)
       expect(rail.options).to.deep.equal(options)
     })
     it('should accept API key from env var', () => {
-      let apiKey = 'dummy-key'
-      process.env['DARWIN_TOKEN'] = apiKey
-      let rail = new Rail()
+      const apiKey = 'dummy-key'
+      process.env.DARWIN_TOKEN = apiKey
+      const rail = new Rail()
 
       expect(rail.apiKey).to.equal(apiKey)
     })
   })
   describe('getDepartureBoard', () => {
     it('should return results for valid station', async () => {
-      let expectedResult = require('./examples/getDepartureBoard')
-      let rail = new Rail()
-      let fake = sinon.fake.yields(null, expectedResult)
+      const expectedResult = require('./examples/getDepartureBoard')
+      const rail = new Rail()
+      const fake = sinon.fake.yields(null, expectedResult)
       rail.darwin.getDepartureBoard = fake
-      let result = await rail.getDepartureBoard('GNW', {})
+      const result = await rail.getDepartureBoard('GNW', {})
       expect(result).to.deep.equal(expectedResult)
       expect(fake).to.be.calledWithExactly('GNW', {}, sinon.match.func)
     })
     it('should throw an error for an exception', async () => {
-      let rail = new Rail()
-      let error = {
+      const rail = new Rail()
+      const error = {
         bang: true
       }
-      let fake = sinon.fake.yields(error, null)
+      const fake = sinon.fake.yields(error, null)
       rail.darwin.getDepartureBoard = fake
       try {
         await rail.getDepartureBoard('TEST', {})
@@ -54,20 +54,20 @@ describe('index', () => {
   })
   describe('getDepartureBoardWithDetails', () => {
     it('should return results for valid station', async () => {
-      let expectedResult = require('./examples/getDepartureBoardWithDetails')
-      let rail = new Rail()
-      let fake = sinon.fake.yields(null, expectedResult)
+      const expectedResult = require('./examples/getDepartureBoardWithDetails')
+      const rail = new Rail()
+      const fake = sinon.fake.yields(null, expectedResult)
       rail.darwin.getDepartureBoardWithDetails = fake
-      let result = await rail.getDepartureBoardWithDetails('GNW', {})
+      const result = await rail.getDepartureBoardWithDetails('GNW', {})
       expect(result).to.deep.equal(expectedResult)
       expect(fake).to.be.calledWithExactly('GNW', {}, sinon.match.func)
     })
     it('should throw an error for an exception', async () => {
-      let rail = new Rail()
-      let error = {
+      const rail = new Rail()
+      const error = {
         bang: true
       }
-      let fake = sinon.fake.yields(error, null)
+      const fake = sinon.fake.yields(error, null)
       rail.darwin.getDepartureBoardWithDetails = fake
       try {
         await rail.getDepartureBoardWithDetails('TEST', {})
@@ -79,20 +79,20 @@ describe('index', () => {
   })
   describe('getArrivalsBoard', () => {
     it('should return results for valid station', async () => {
-      let expectedResult = require('./examples/getArrivalsBoard')
-      let rail = new Rail()
-      let fake = sinon.fake.yields(null, expectedResult)
+      const expectedResult = require('./examples/getArrivalsBoard')
+      const rail = new Rail()
+      const fake = sinon.fake.yields(null, expectedResult)
       rail.darwin.getArrivalsBoard = fake
-      let result = await rail.getArrivalsBoard('GNW', {})
+      const result = await rail.getArrivalsBoard('GNW', {})
       expect(result).to.deep.equal(expectedResult)
       expect(fake).to.be.calledWithExactly('GNW', {}, sinon.match.func)
     })
     it('should throw an error for an exception', async () => {
-      let rail = new Rail()
-      let error = {
+      const rail = new Rail()
+      const error = {
         bang: true
       }
-      let fake = sinon.fake.yields(error, null)
+      const fake = sinon.fake.yields(error, null)
       rail.darwin.getArrivalsBoard = fake
       try {
         await rail.getArrivalsBoard('TEST', {})
@@ -104,20 +104,20 @@ describe('index', () => {
   })
   describe('getArrivalsBoardWithDetails', () => {
     it('should return results for valid station', async () => {
-      let expectedResult = require('./examples/getArrivalsBoardWithDetails')
-      let rail = new Rail()
-      let fake = sinon.fake.yields(null, expectedResult)
+      const expectedResult = require('./examples/getArrivalsBoardWithDetails')
+      const rail = new Rail()
+      const fake = sinon.fake.yields(null, expectedResult)
       rail.darwin.getArrivalsBoardWithDetails = fake
-      let result = await rail.getArrivalsBoardWithDetails('GNW', {})
+      const result = await rail.getArrivalsBoardWithDetails('GNW', {})
       expect(result).to.deep.equal(expectedResult)
       expect(fake).to.be.calledWithExactly('GNW', {}, sinon.match.func)
     })
     it('should throw an error for an exception', async () => {
-      let rail = new Rail()
-      let error = {
+      const rail = new Rail()
+      const error = {
         bang: true
       }
-      let fake = sinon.fake.yields(error, null)
+      const fake = sinon.fake.yields(error, null)
       rail.darwin.getArrivalsBoardWithDetails = fake
       try {
         await rail.getArrivalsBoardWithDetails('TEST', {})
@@ -129,20 +129,20 @@ describe('index', () => {
   })
   describe('getArrivalsDepartureBoard', () => {
     it('should return results for valid station', async () => {
-      let expectedResult = require('./examples/getArrivalsDepartureBoard')
-      let rail = new Rail()
-      let fake = sinon.fake.yields(null, expectedResult)
+      const expectedResult = require('./examples/getArrivalsDepartureBoard')
+      const rail = new Rail()
+      const fake = sinon.fake.yields(null, expectedResult)
       rail.darwin.getArrivalsDepartureBoard = fake
-      let result = await rail.getArrivalsDepartureBoard('GNW', {})
+      const result = await rail.getArrivalsDepartureBoard('GNW', {})
       expect(result).to.deep.equal(expectedResult)
       expect(fake).to.be.calledWithExactly('GNW', {}, sinon.match.func)
     })
     it('should throw an error for an exception', async () => {
-      let rail = new Rail()
-      let error = {
+      const rail = new Rail()
+      const error = {
         bang: true
       }
-      let fake = sinon.fake.yields(error, null)
+      const fake = sinon.fake.yields(error, null)
       rail.darwin.getArrivalsDepartureBoard = fake
       try {
         await rail.getArrivalsDepartureBoard('TEST', {})
@@ -154,20 +154,20 @@ describe('index', () => {
   })
   describe('getArrivalsDepartureBoardWithDetails', () => {
     it('should return results for valid station', async () => {
-      let expectedResult = require('./examples/getArrivalsDepartureBoardWithDetails')
-      let rail = new Rail()
-      let fake = sinon.fake.yields(null, expectedResult)
+      const expectedResult = require('./examples/getArrivalsDepartureBoardWithDetails')
+      const rail = new Rail()
+      const fake = sinon.fake.yields(null, expectedResult)
       rail.darwin.getArrivalsDepartureBoardWithDetails = fake
-      let result = await rail.getArrivalsDepartureBoardWithDetails('GNW', {})
+      const result = await rail.getArrivalsDepartureBoardWithDetails('GNW', {})
       expect(result).to.deep.equal(expectedResult)
       expect(fake).to.be.calledWithExactly('GNW', {}, sinon.match.func)
     })
     it('should throw an error for an exception', async () => {
-      let rail = new Rail()
-      let error = {
+      const rail = new Rail()
+      const error = {
         bang: true
       }
-      let fake = sinon.fake.yields(error, null)
+      const fake = sinon.fake.yields(error, null)
       rail.darwin.getArrivalsDepartureBoardWithDetails = fake
       try {
         await rail.getArrivalsDepartureBoardWithDetails('TEST', {})
@@ -179,21 +179,21 @@ describe('index', () => {
   })
   describe('getServiceDetails', () => {
     it('should return results for valid service', async () => {
-      let expectedResult = require('./examples/getServiceDetails')
-      let serviceId = 'PcxniJ81G487iKUC6gRhQA=='
-      let rail = new Rail()
-      let fake = sinon.fake.yields(null, expectedResult)
+      const expectedResult = require('./examples/getServiceDetails')
+      const serviceId = 'PcxniJ81G487iKUC6gRhQA=='
+      const rail = new Rail()
+      const fake = sinon.fake.yields(null, expectedResult)
       rail.darwin.getServiceDetails = fake
-      let result = await rail.getServiceDetails(serviceId)
+      const result = await rail.getServiceDetails(serviceId)
       expect(result).to.deep.equal(expectedResult)
       expect(fake).to.be.calledWithExactly(serviceId, sinon.match.func)
     })
     it('should throw an error for an exception', async () => {
-      let rail = new Rail()
-      let error = {
+      const rail = new Rail()
+      const error = {
         bang: true
       }
-      let fake = sinon.fake.yields(error, null)
+      const fake = sinon.fake.yields(error, null)
       rail.darwin.getServiceDetails = fake
       try {
         await rail.getServiceDetails('TEST')
@@ -205,20 +205,20 @@ describe('index', () => {
   })
   describe('getStationDetails', () => {
     it('should return results for valid service', async () => {
-      let expectedResult = require('./examples/getStationDetails')
-      let rail = new Rail()
-      let fake = sinon.fake.yields(null, expectedResult)
+      const expectedResult = require('./examples/getStationDetails')
+      const rail = new Rail()
+      const fake = sinon.fake.yields(null, expectedResult)
       rail.darwin.getStationDetails = fake
-      let result = await rail.getStationDetails('GNW')
+      const result = await rail.getStationDetails('GNW')
       expect(result).to.deep.equal(expectedResult)
       expect(fake).to.be.calledWithExactly('GNW', sinon.match.func)
     })
     it('should throw an error for an exception', async () => {
-      let rail = new Rail()
-      let error = {
+      const rail = new Rail()
+      const error = {
         bang: true
       }
-      let fake = sinon.fake.yields(error, null)
+      const fake = sinon.fake.yields(error, null)
       rail.darwin.getStationDetails = fake
       try {
         await rail.getStationDetails('TEST')
@@ -230,29 +230,29 @@ describe('index', () => {
   })
   describe('getNextDeparture', () => {
     it('should return results for valid from and to station with options specified', async () => {
-      let expectedResult = require('./examples/getNextDepature')
-      let rail = new Rail()
-      let fake = sinon.fake.yields(null, expectedResult)
+      const expectedResult = require('./examples/getNextDepature')
+      const rail = new Rail()
+      const fake = sinon.fake.yields(null, expectedResult)
       rail.darwin.getNextDeparture = fake
-      let result = await rail.getNextDeparture('GNW', 'CST', { pies: true })
+      const result = await rail.getNextDeparture('GNW', 'CST', { pies: true })
       expect(result).to.deep.equal(expectedResult)
       expect(fake).to.be.calledWithExactly('GNW', 'CST', { pies: true }, sinon.match.func)
     })
     it('should return results for valid from and to station without options specified', async () => {
-      let expectedResult = require('./examples/getNextDepature')
-      let rail = new Rail()
-      let fake = sinon.fake.yields(null, expectedResult)
+      const expectedResult = require('./examples/getNextDepature')
+      const rail = new Rail()
+      const fake = sinon.fake.yields(null, expectedResult)
       rail.darwin.getNextDeparture = fake
-      let result = await rail.getNextDeparture('GNW', 'CST')
+      const result = await rail.getNextDeparture('GNW', 'CST')
       expect(result).to.deep.equal(expectedResult)
       expect(fake).to.be.calledWithExactly('GNW', 'CST', {}, sinon.match.func)
     })
     it('should throw an error for an exception', async () => {
-      let rail = new Rail()
-      let error = {
+      const rail = new Rail()
+      const error = {
         bang: true
       }
-      let fake = sinon.fake.yields(error, null)
+      const fake = sinon.fake.yields(error, null)
       rail.darwin.getNextDeparture = fake
       try {
         await rail.getNextDeparture('TEST', 'TEST2')
@@ -264,29 +264,29 @@ describe('index', () => {
   })
   describe('getNextDepartureWithDetails', () => {
     it('should return results for valid from and to station with options specified', async () => {
-      let expectedResult = require('./examples/getNextDepatureWithDetails')
-      let rail = new Rail()
-      let fake = sinon.fake.yields(null, expectedResult)
+      const expectedResult = require('./examples/getNextDepatureWithDetails')
+      const rail = new Rail()
+      const fake = sinon.fake.yields(null, expectedResult)
       rail.darwin.getNextDepartureWithDetails = fake
-      let result = await rail.getNextDepartureWithDetails('GNW', 'CST', { pies: true })
+      const result = await rail.getNextDepartureWithDetails('GNW', 'CST', { pies: true })
       expect(result).to.deep.equal(expectedResult)
       expect(fake).to.be.calledWithExactly('GNW', 'CST', { pies: true }, sinon.match.func)
     })
     it('should return results for valid from and to station without options specified', async () => {
-      let expectedResult = require('./examples/getNextDepatureWithDetails')
-      let rail = new Rail()
-      let fake = sinon.fake.yields(null, expectedResult)
+      const expectedResult = require('./examples/getNextDepatureWithDetails')
+      const rail = new Rail()
+      const fake = sinon.fake.yields(null, expectedResult)
       rail.darwin.getNextDepartureWithDetails = fake
-      let result = await rail.getNextDepartureWithDetails('GNW', 'CST')
+      const result = await rail.getNextDepartureWithDetails('GNW', 'CST')
       expect(result).to.deep.equal(expectedResult)
       expect(fake).to.be.calledWithExactly('GNW', 'CST', {}, sinon.match.func)
     })
     it('should throw an error for an exception', async () => {
-      let rail = new Rail()
-      let error = {
+      const rail = new Rail()
+      const error = {
         bang: true
       }
-      let fake = sinon.fake.yields(error, null)
+      const fake = sinon.fake.yields(error, null)
       rail.darwin.getNextDepartureWithDetails = fake
       try {
         await rail.getNextDepartureWithDetails('TEST', 'TEST2')
@@ -298,29 +298,29 @@ describe('index', () => {
   })
   describe('getFastestDeparture', () => {
     it('should return results for valid from and to station with options specified', async () => {
-      let expectedResult = require('./examples/getFastestDeparture')
-      let rail = new Rail()
-      let fake = sinon.fake.yields(null, expectedResult)
+      const expectedResult = require('./examples/getFastestDeparture')
+      const rail = new Rail()
+      const fake = sinon.fake.yields(null, expectedResult)
       rail.darwin.getFastestDeparture = fake
-      let result = await rail.getFastestDeparture('GNW', 'CST', { pies: true })
+      const result = await rail.getFastestDeparture('GNW', 'CST', { pies: true })
       expect(result).to.deep.equal(expectedResult)
       expect(fake).to.be.calledWithExactly('GNW', 'CST', { pies: true }, sinon.match.func)
     })
     it('should return results for valid from and to station without options specified', async () => {
-      let expectedResult = require('./examples/getFastestDeparture')
-      let rail = new Rail()
-      let fake = sinon.fake.yields(null, expectedResult)
+      const expectedResult = require('./examples/getFastestDeparture')
+      const rail = new Rail()
+      const fake = sinon.fake.yields(null, expectedResult)
       rail.darwin.getFastestDeparture = fake
-      let result = await rail.getFastestDeparture('GNW', 'CST')
+      const result = await rail.getFastestDeparture('GNW', 'CST')
       expect(result).to.deep.equal(expectedResult)
       expect(fake).to.be.calledWithExactly('GNW', 'CST', {}, sinon.match.func)
     })
     it('should throw an error for an exception', async () => {
-      let rail = new Rail()
-      let error = {
+      const rail = new Rail()
+      const error = {
         bang: true
       }
-      let fake = sinon.fake.yields(error, null)
+      const fake = sinon.fake.yields(error, null)
       rail.darwin.getFastestDeparture = fake
       try {
         await rail.getFastestDeparture('TEST', 'TEST2')
@@ -332,29 +332,29 @@ describe('index', () => {
   })
   describe('getFastestDepartureWithDetails', () => {
     it('should return results for valid from and to station with options specified', async () => {
-      let expectedResult = require('./examples/getFastestDepartureWithDetails')
-      let rail = new Rail()
-      let fake = sinon.fake.yields(null, expectedResult)
+      const expectedResult = require('./examples/getFastestDepartureWithDetails')
+      const rail = new Rail()
+      const fake = sinon.fake.yields(null, expectedResult)
       rail.darwin.getFastestDepartureWithDetails = fake
-      let result = await rail.getFastestDepartureWithDetails('GNW', 'CST', { pies: true })
+      const result = await rail.getFastestDepartureWithDetails('GNW', 'CST', { pies: true })
       expect(result).to.deep.equal(expectedResult)
       expect(fake).to.be.calledWithExactly('GNW', 'CST', { pies: true }, sinon.match.func)
     })
     it('should return results for valid from and to station without options specified', async () => {
-      let expectedResult = require('./examples/getFastestDepartureWithDetails')
-      let rail = new Rail()
-      let fake = sinon.fake.yields(null, expectedResult)
+      const expectedResult = require('./examples/getFastestDepartureWithDetails')
+      const rail = new Rail()
+      const fake = sinon.fake.yields(null, expectedResult)
       rail.darwin.getFastestDepartureWithDetails = fake
-      let result = await rail.getFastestDepartureWithDetails('GNW', 'CST')
+      const result = await rail.getFastestDepartureWithDetails('GNW', 'CST')
       expect(result).to.deep.equal(expectedResult)
       expect(fake).to.be.calledWithExactly('GNW', 'CST', {}, sinon.match.func)
     })
     it('should throw an error for an exception', async () => {
-      let rail = new Rail()
-      let error = {
+      const rail = new Rail()
+      const error = {
         bang: true
       }
-      let fake = sinon.fake.yields(error, null)
+      const fake = sinon.fake.yields(error, null)
       rail.darwin.getFastestDepartureWithDetails = fake
       try {
         await rail.getFastestDepartureWithDetails('TEST', 'TEST2')
