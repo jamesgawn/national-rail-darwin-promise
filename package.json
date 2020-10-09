@@ -1,7 +1,7 @@
 {
   "name": "national-rail-darwin-promise",
   "description": "A promise based wrapper for the national-rail-darwin library to access national rails SOAP API.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "main": "index.js",
   "scripts": {
     "test": "nyc mocha --recursive --timeout=10000 --exit --reporter mocha-junit-reporter --reporter-options mochaFile=reports/mocha/test-results.xml",
